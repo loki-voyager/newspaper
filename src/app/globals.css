@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply text-white min-w-full min-h-full flex;
+}
+body {
+  @apply bg-bgGreen bg-opacity-10 backdrop-blur-lg flex-col;
+}
+header {
+  @apply bg-white bg-opacity-10 p-2 flex-initial;
+}
+.wrapper {
+  @apply h-full max-w-5xl mx-auto p-1 flex flex-col;
+}
+main {
+  @apply flex-1 py-4;
+}
+nav {
+  @apply flex gap-1;
+}
+h1 {
+  @apply bg-white bg-opacity-20 inline-block px-2 py-1.5 rounded text-2xl;
+}
+h3 {
+  @apply bg-white bg-opacity-20 inline-block px-2 py-1.5 rounded my-1;
+}
+.button {
+  @apply bg-black bg-opacity-50 inline-block px-2 py-1.5 rounded hover:bg-white hover:bg-opacity-30 duration-150 ease-linear;
+}
+.button.active {
+  @apply bg-white bg-opacity-25;
+}
+.ul-c {
+  @apply flex flex-col gap-1;
+}
+.search {
+  @apply flex gap-1 pt-1;
+}
+.search > input {
+  @apply flex-1 bg-black bg-opacity-50 inline-block px-2 py-1.5 rounded hover:bg-white hover:bg-opacity-30 focus:bg-white focus:bg-opacity-30 focus:border-none outline-none duration-150 ease-linear;
+}
+.form {
+  @apply flex flex-col gap-1 pt-1;
+}
+.form > input,
+textarea {
+  @apply flex-1 bg-black bg-opacity-50 inline-block px-2 py-1.5 rounded hover:bg-white hover:bg-opacity-30 focus:bg-white focus:bg-opacity-30 focus:border-none outline-none duration-150 ease-linear;
+}
+.button.in {
+  @apply bg-mGreen bg-opacity-50 hover:bg-opacity-75 text-2xl;
+}
+.button.add {
+  @apply bg-mPred bg-opacity-50 hover:bg-opacity-75 text-2xl;
+}
+.button.out {
+  @apply bg-mRed bg-opacity-50 hover:bg-opacity-75 text-2xl;
+}
+.button.edit {
+  @apply bg-mYellow bg-opacity-50 hover:bg-opacity-75 text-2xl;
+}
+.auth {
+  @apply flex flex-col py-1.5;
+}
+.button-block {
+  @apply flex gap-1;
+}
+.profile {
+  @apply flex flex-col gap-1;
+}
+.profile.edit {
+  @apply flex flex-col gap-1 self-center;
+}
+.block {
+  @apply inline-flex flex-col gap-1 bg-black bg-opacity-50 px-2 py-1.5 rounded;
+}
+.sign {
+  @apply flex justify-center;
+}
+.news {
+  @apply flex flex-col gap-1 py-1.5;
+}
+.form.news {
+  @apply flex h-full flex-col gap-1 pt-1 mx-auto max-w-3xl w-full;
+}
+.form.news > input {
+  @apply flex-initial;
+}
+.form.news > textarea {
+  @apply flex-1;
+}
+.onenews {
+  @apply flex flex-col gap-1 py-1.5 h-full;
+}
+.onenews_body {
+  @apply flex-initial;
+}
+.onenews_body.edit {
+  @apply flex-1;
+}
+.news-h1 {
+  @apply inline-flex gap-1 items-center;
+}
+.grades_block {
+  @apply flex gap-1;
+}
+.grades {
+  @apply inline-flex px-2 py-1.5 rounded text-xl duration-150 ease-linear cursor-pointer;
+}
+.grades.likes {
+  @apply bg-mGreen bg-opacity-50 hover:bg-opacity-75;
+}
+.grades.likes.dis {
+  @apply cursor-default
+}
+.grades.likes.active{
+  @apply bg-opacity-75 hover:bg-opacity-100
+}
+.grades.dislikes {
+  @apply bg-mRed bg-opacity-50 hover:bg-opacity-75;
+}
+.grades.dislikes.dis {
+  @apply cursor-default
+}
+.grades.dislikes.active {
+  @apply bg-opacity-75 hover:bg-opacity-100;
+}
+.listOfNews {
+  @apply flex flex-col gap-1;
+}
+h2 {
+  @apply bg-white bg-opacity-20 inline-block px-2 py-1.5 rounded my-1 text-xl;
+}
+.btn_block{
+  @apply flex gap-1
+}
+.com_map{
+  @apply flex flex-col gap-1
+}
+.com_username{
+}
+.com_gen{
+}
+.com_body{
+}
+.com{
+  @apply hover:bg-black hover:bg-opacity-70
+}
+.com_block{
+  @apply flex flex-col gap-1 bg-black bg-opacity-50 px-2 py-1.5 rounded
+}
+.com_add{
+ @apply flex flex-col
+}
+.form_com{
+  @apply  flex-1 flex flex-col gap-1
+}
+.subcom{
+  @apply flex py-1
+}
+.subcom > button{
+@apply flex-1
+}
+.pagination{
+  @apply flex gap-1 justify-center flex-wrap
+}
+.select{
+  @apply flex w-full
+}
+.select>select,.select>select option{
+  @apply w-full bg-black bg-opacity-50 inline-block px-2 py-1.5 rounded hover:bg-white hover:bg-opacity-30 focus:bg-white focus:bg-opacity-30 focus:border-none outline-none duration-150 ease-linear
+}
